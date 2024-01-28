@@ -1,0 +1,79 @@
+{
+  "userList": [
+    {
+      "id": "acc7",
+      "user": {
+        "firstName": "Hussam",
+        "lastName": "Abdulal",
+        "email": "hussamabdulal94@gmail.com",
+        "password": "0"
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": "74f8",
+      "title": "JavaScript",
+      "number": "90",
+      "duration": 60,
+      "type": "distans",
+      "image": "https://i.ibb.co/gjfhRZ8/unnamed-1.jpg",
+      "date": "2024-02-01",
+      "bookingOption": "distans"
+    },
+    {
+      "id": "5490",
+      "title": "Webutveckling 2",
+      "number": "91",
+      "duration": 30,
+      "type": "distans",
+      "image": "https://i.ibb.co/gjfhRZ8/unnamed-1.jpg",
+      "date": "2024-02-12",
+      "bookingOption": "klassrum"
+    },
+    {
+      "id": "31af",
+      "title": "Html & Css",
+      "number": "93",
+      "duration": 60,
+      "type": "distans",
+      "image": "https://i.ibb.co/gjfhRZ8/unnamed-1.jpg",
+      "date": "2024-03-01",
+      "bookingOption": "distans"
+    },
+    {
+      "id": "301c",
+      "title": "Webutveckling 1",
+      "number": "94",
+      "duration": 30,
+      "type": "distans",
+      "image": "https://i.ibb.co/gjfhRZ8/unnamed-1.jpg",
+      "date": "2024-01-29",
+      "bookingOption": "klassrum"
+    },
+    {
+      "id": "3a80",
+      "title": "Programmering 1",
+      "number": "97",
+      "duration": 40,
+      "type": "distans",
+      "image": "https://i.ibb.co/gjfhRZ8/unnamed-1.jpg",
+      "date": "2024-02-01",
+      "bookingOption": "distans"
+    }
+  ],
+  "courseStudents": [],
+  "userCourses": [
+    {
+      "id": "9e78",
+      "kursId": "3a80",
+      "kursTitel": "",
+      "fornamn": "Hussam",
+      "efternamn": "Abdulal",
+      "userEmail": "hussamabdulal94@gmail.com",
+      "mobilnummer": "0736868356",
+      "faktureringsadress": "linköping rågången 4",
+      "selectedCourse": "JavaScript for Experts"
+    }
+  ]
+}

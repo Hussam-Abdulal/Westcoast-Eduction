@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Courses</title>
+    
+
+  
+  <link rel="stylesheet" href="style.css"> <!-- Inkludera din CSS-fil här -->
+ 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></head>
+
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+        background-image: url('https://i.ibb.co/gjfhRZ8/unnamed-1.jpg');
+   
+        background-size: cover;
+        background-repeat: no-repeat;
+      
+       
+
+
+background-size: cover;
+    }
+
+  
+
+    nav {
+        background-color: #0a3e76f0;
+padding: 0;
+height: 10vh;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 1;
+
+}
+
+.menu-item:not(:last-child):after {
+content: "|";
+display: flex;
+position: absolute;
+right: -1.5625rem;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.menu-item {
+
+text-decoration: none;
+margin: 0 1.25rem;
+font-size: 1rem;
+color: white;
+position: relative;
+}
+
+.right-menu {
+margin-left: 40%; /* Justera detta värde efter önskat avstånd */
+}
+
+.left-menu {
+margin-left: 3%; /* Justera detta värde efter önskat avstånd */
+}
+
+.nav-text {
+font-family: Arial, sans-serif;
+font-weight: 500;
+font-size: 1.5rem;
+color: white;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+    section {
+        padding: 2em;
+    }
+    footer {
+        background-color: #0a3e76f0;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+        span{
+            color: aliceblue;
+        }
+
+
+        .bottom{
+            padding: 2em;
+
+        }
+        /* Lägg till följande CSS-regel */
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+/* Media query för mindre skärmar */
+@media only screen and (max-width: 768px) {
+    #courses {
+        flex-direction: column;
+        align-items: center; /* Centrera kurserna på mindre skärmar */
+    }
+
+    .menu {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .left-menu, .right-menu {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .menu-item {
+            margin: 0.5rem 0;
+        }
+
+        .right-menu {
+            margin-top: 1rem;
+        }
+        .menu-item:not(:last-child):after, .nav-text {
+            display: none;
+        }
+}
+
+
+
+
+
+</style>
+
+<body>
+
+  
+    <header>
+       
+
+        <nav class="menu">
+            <div class="left-menu">
+                <a href="index.html" class="menu-item">Kurser</a>
+                <a href="admin-login.html" class="menu-item">Admin</a>
+            </div>
+
+
+           
+            <a href="westcoast.html" class="nav-text">Westcoast Education</a>
+
+
+            <div class="right-menu">
+                <a href="login.html" class="menu-item">Logga in</a>
+                <a href="register.html" class="menu-item">Skapa Konto</a>
+            </div>
+
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        </nav>
+    </header>
+
+<section>
+
+</section>
+ 
+ 
+    <div id="courses"></div>
+
+    
+
+    <section class="bottom"></section>
+   
+
+    <footer>
+        <p>&copy; 2024 Westcoast Education. Alla rättigheter förbehållna.</p>
+    </footer>
+
+
+    
+   
+
+    <script src="index.js" defer></script> 
+
+    <script src="courses.js" defer></script> 
+
+</body>
+</html>
